@@ -7,9 +7,19 @@ Histoire de ne plus avoir a copier/coller l'architecture Front-End, de céer un 
 
 ## Installation
 
-Copier les fichiers a la racine du projet laravel
+### Installer / Télécharger les dépots/dépendances
+- Installation classique de Laravel
+	- composer create-project laravel/laravel --prefer-dist nomDuProjet
+- Télécharger et Copier les fichiers a la racine du projet laravel
+	- cd nomDuProjet
+	- clone https://github.com/Anyconcept/labProject.git
+	- cp -pR labProject/* .
+- Supprimer les sources téléchargées
+	- rm -rf labProject/
+	- rm -rf labProject.git/ 
 
-### A faire apres install
+
+### Installer les libs
 
 - Installer dépenances NPM
 	- npm install
@@ -17,9 +27,15 @@ Copier les fichiers a la racine du projet laravel
 - Installer dépendances Bower
 	- bower install
 
+### Configuration
+- Modifier l'url du serveur de Browser-Sync ( ici, en local.dev )
+
+### Lancer gulp
+- gulp
+ 
 
 
-## L'architecture
+## L'architecture 
 - resources
 	- assets
 		- components 	-> installation des libs Bower
@@ -41,22 +57,23 @@ gulp, browser-sync, gulp-clean, gulp-rename, gulp-sass, gulp-autoprefixer, gulp-
 ### Après passage du gulpfile
 
 - public
-	- css		-> 
-				-> app.css (fichiers concatenés (non minifiés) 
-				-> vendor.css (fichiers css des libs concatenés et minifiés))
-				-> images du thème (minifiées)
-	- images	-> images hors thème  (minifiées)
-	- js 		-> 
-				-> app.js (fichiers concatenés (non uglifyés)
-				-> vendor.js (fichiers js des libs concatenés et uglifyés)
+	- css
+		- app.css (fichiers concatenés (non minifiés) 
+		- vendor.css (fichiers css des libs concatenés et minifiés))
+		- images du thème (minifiées)
+	- images	
+		- images hors thème  (minifiées)
+	- js 		
+		- app.js (fichiers concatenés (non uglifyés)
+		- vendor.js (fichiers js des libs concatenés et uglifyés)
 
 
-#### + Chargement d'un serveur Browser-Sync
+** + Chargement d'un serveur Browser-Sync **
 
 
 ## Info utiles
 Les librairies Bower sont installées dans **resources/assets/components/**
-
+avant d'etres traitées via gulp...
 
 ### Si besoin
 - Installer PHPUnit
