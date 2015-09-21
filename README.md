@@ -50,8 +50,8 @@ Histoire de ne plus avoir a copier/coller l'architecture Front-End, de céer un 
 
 
 
-### gulpfile
-#### Les modules :
+## gulpfile
+### Les modules :
 gulp, browser-sync, gulp-clean, gulp-rename, gulp-sass, gulp-autoprefixer, gulp-concat, gulp-uglify, gulp-minify-css, gulp-imagemin, gulp-changed, main-bower-files, gulp-filter, gulp-filter, gulp-size
 
 ### Après passage du gulpfile
