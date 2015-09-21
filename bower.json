@@ -14,8 +14,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.5",
-    "angular-ui-router": "~0.2.15",
-    "jquery": "1.11"
+    "angular": null,
+    "angular-ui-router": null,
+    "jquery": null
   }
 }
