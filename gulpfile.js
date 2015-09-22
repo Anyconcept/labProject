@@ -175,11 +175,13 @@ gulp.task('images', function(){
  *   - Reload
  */
 gulp.task('imagesCSS', function(){
-    return gulp.src('resources/assets/imagesCSS/**/*.*')
-        .pipe( changed('public/css') )
+    return gulp.src('resources/assets/scss/img/**/*.*')
+        .pipe( filter('**/*.{jpg,jpeg,png,gif}') )
+        .pipe( changed('public/css/img') )
         .pipe( imagemin({ optimizationLevel: 7, progressive: true, interlace: true }) )
-        .pipe( gulp.dest('public/css') );
+        .pipe( gulp.dest('public/css/img') );
 });
+
 
 /**
  * Tache : Nettoyer le js/vendor.js avant de créer la nouvelle version

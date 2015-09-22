@@ -39,10 +39,10 @@ Histoire de ne plus avoir a copier/coller l'architecture Front-End, de céer un 
 - resources
 	- assets
 		- components 	-> installation des libs Bower
-		- images 	-> images (hors thème)
-		- imagesCSS	-> images du thème
+		- img 		-> images (hors thème)
 		- js		
 		- sass		-> fichiers .sass
+			- img 	-> images du theme
 	- lang
 		- (Probablement toutes les langues possibles :p )
 	- views 	
@@ -60,8 +60,10 @@ gulp, browser-sync, gulp-clean, gulp-rename, gulp-sass, gulp-autoprefixer, gulp-
 	- css
 		- app.css (fichiers concatenés (non minifiés) 
 		- vendor.css (fichiers css des libs concatenés et minifiés))
-		- images du thème (minifiées)
-	- images	
+		
+		- img 
+			- images du theme minifiées
+	- img	
 		- images hors thème  (minifiées)
 	- js 		
 		- app.js (fichiers concatenés (non uglifyés)
