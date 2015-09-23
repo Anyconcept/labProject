@@ -65,8 +65,8 @@ gulp.task('default', ['images', 'imagesCSS', 'bower', 'js', 'sass'], function ()
     gulp.watch(['app/**/*.php', 'resources/views/**/*.php']).on('change', browserSync.reload);
 
     // Watch fichiers images et imagesCSS
-    gulp.watch('resources/assets/images/**/*.*', ['images']);
-    gulp.watch('resources/assets/imagesCSS/**/*.*', ['imagesCSS']);
+    gulp.watch('resources/assets/img/**/*.*', ['images']);
+    gulp.watch('resources/assets/css/img/**/*.*', ['imagesCSS']);
 
 });
 
